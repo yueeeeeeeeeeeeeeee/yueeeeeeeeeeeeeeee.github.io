@@ -1,0 +1,9 @@
+nav a {
+    text-decoration: none;
+    background-color: #DAEFF5;
+    border: 1px solid #F5E79C;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #BD849A;
+}
