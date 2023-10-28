@@ -92,7 +92,7 @@ body {
   } 
   .message textarea {
     width: 100%; 
-    border: none; 
+    border: none;/* Remove the textarea border */ 
     outline: none; 
   }
   table {
@@ -100,7 +100,7 @@ body {
     border: 1px solid;
   }
   .options label {
-    display: block; 
+    display: block; /* Display labels on separate lines */
     margin-bottom: 10px; 
   }
   
