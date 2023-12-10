@@ -1,193 +1,1168 @@
-
+ /* Mobile styles */
+ @media screen and (max-width: 760px) {
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  color: #222;
 }
 
-h1 {
-    /* fonts size */
-}
+header {
+      background-color: #222;
+      padding: 5px; /* Adjust padding as needed */
+    }
+  
+.wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+.logo {
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      margin-bottom: 20px; /* Adjust margin as needed */
+    }
+  
+nav {
+      width: 100%;
+    }
+  
+nav ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+nav ul li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px; /* Adjust margin as needed */
+    }
+  
+nav ul li a {
+      display: block;
+      color: #c78c06;
+      text-decoration: none;
+      padding: 10px;
+    }
 
-img {
+  
+nav ul li a:hover {
+      background-color: #c78c06;
+      color: #222;
+      padding: 80px;
+      margin-bottom: 5px;
+    }
+  
+.search {
+        display: flex; /* Use flexbox for the search and icon */
+        align-items: center; /* Align items vertically */
+        margin-top: 20px; /* Adjust margin as needed */
+      }
+    
+.search input[type="text"] {
+        flex: 1; /* Allow input to grow and take available space */
+        width: calc(100% - 40px); /* Adjust width as needed */
+        background-color: white;
+        border: 2px solid ;
+        padding: 8px;
+        border-radius: 3px;
+        color: #222;
+      }
+    
+.icon {
+        color: #c78c06;
+        background-color: #222;
+        width: 28px; /* Adjust icon width */
+        height: 28px; /* Adjust icon height */
+        border: 1px solid #c78c06; /* Set border size and color */
+        justify-content: center;
+      }
+
+    /* Styles for the main banner */
+.main-banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden; /* Ensure the image fits within its container */
+  }
+  
+  /* Style for the image within the main banner */
+  .main-banner img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    display: block;
+  }
+/* Style for the black translucent overlay */
+.main-banner::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black translucent background */
+  }
+  
+  /* Style for the text overlay */
+  .text-overlay1 {
+    position: absolute;
+    top: 20px;
+    bottom: 40px;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    max-width: 100%;
+    z-index: 1; 
+  }
+
+  .text-overlay1 h1 {
+    font-size: 3.5rem; 
+    margin-bottom: 20px;
+  }
+  
+  .text-overlay1 p {
+    font-size: small; /* Adjust the font size of p */
+    margin-bottom: 15px;
+  }
+  
+  .text-overlay1 .btn1 {
+    display: inline-block;
+    padding: 20px 20px; /* Adjust the padding of the button */
+    font-size: 1.1rem; /* Adjust the font size of the button */
+    background-color: #c78c06;
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+  }
+
+
+  .about-us {
+    background-color: #ffe6ac; 
+    padding: 20px; /* Add padding to create space around the content */
+  }
+
+  .about-us img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    display: block;
+  }
+  .about-us h2 {
+    font-size: 38px; /* Adjust the font size of h2 */
+  }
+  
+  .about-us p {
+    font-size: 14px; /* Adjust the font size of p */
+    line-height: 1.5; 
+    font-weight: 500;
+  }
+
+  .digital {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .digital img {
     width: 100%;
     height: auto;
+    display: block;
+  }
+
+  .digital h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .digital h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .digital p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .digital1 {
+    background-color: #ffe6ac;
+    padding: 5px;
+  }
+
+  .btn2 {
+    display: inline-block;
+    padding: 30px 30px; /* Adjust the padding of the button */
+    font-size: 20px; /* Adjust the font size of the button */
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .market {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .market img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .market h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .market h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .market p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .market1 {
+    background-color: #ffe6ac;
+    padding: 5px;
+  }
+
+  .video {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .video img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .video h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  
+  .video h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .video p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .video1 {
+    background-color: #ffe6ac;
+    padding: 5px;
+  }
+
+  .web {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .web img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .web h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  
+  .web h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .web p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .web1 {
+    background-color: #ffe6ac;
+    padding: 5px;
+  }
+
+  .print {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .print img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .print h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  
+  .print h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .print p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .print1 {
+    background-color: #ffe6ac;
+    padding: 5px;
+  }
+
+  .vision {
+    width: 100%; /* Desired width of the cropped image */
+    height: 300px; /* Desired height of the cropped image */
+    position: relative; /* Establish positioning context */
 }
 
-/* WRAPPER */
-.wrapper {
-    max-width: 1200px;
-    /* makes sure content stays within 1200px */
-    margin: auto;
+.vision img {
+  margin-top: 10px;
+  width: 100%; /* Desired width */
+  height: 235px; /* Desired height */
+  object-fit: cover; /* Crops the image to cover the specified dimensions */
 }
 
-/* HEADER STYLES */
-header {
-    background-color: black;
-    color: orange;
-    padding: 1em;
+  /* Style for the text overlay */
+  .text-overlay2 {
+    position: absolute;
+    top: -30px;
+    bottom: 20px;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    max-width: 100%;
+    z-index: 1; 
+  }
+
+  .text-overlay2 h3 {
+    font-size: 28px; 
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .text-overlay2 p {
+    font-size: 14px; /* Adjust the font size of p */
+    margin-bottom: 15px;
+  }
+  
+  .text-overlay2 .btn3 {
+    display: inline-block;
+    padding: 25px 25px; /* Adjust the padding of the button */
+    font-size: 20px; /* Adjust the font size of the button */
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid #c78c06;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .horizontal-line {
+    border-top: 3px solid #c78c06; /* Adjust the width and color as needed */
+    margin: 10px 0; /* Optional margin for spacing */
+}
+
+.john {
+  background-color: white;
+  padding: 10px;
+  margin-top: -65px;
+}
+
+.john img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.john h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+.john h3 {
+  font-size: 28px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.john h4 {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: -8px;
+}
+
+.john p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.john1 {
+  background-color: #ffe6ac;
+  padding: 5px;
+}
+
+.bob {
+  background-color: white;
+  padding: 10px;
+}
+
+.bob img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bob h3 {
+  font-size: 28px;
+  margin-bottom: 0;
+  margin-top: 15px;
+
+}
+
+.bob h4 {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: -8px;
+}
+
+.bob p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.bob1 {
+  background-color: #ffe6ac;
+  padding: 5px;
+}
+
+.table h2 {
+  font-size: 38px;
+  margin-bottom: -5px;
+}
+
+.table h3 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.table input[type="text"],
+.table textarea {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    padding: 8px; /* Adjust padding as needed */
+    margin: 6px 0; /* Adjust margin as needed */
+}
+
+.table input[type="text1"],
+.table textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    padding: 8px; /* Adjust padding as needed */
+    margin: 6px 0; /* Adjust margin as needed */
+}
+
+.table p {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.table button {
+  background-color: #222;
+  color: #c78c06;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #ffe6ac;
+}
+
+td, th {
+  height: 40px;
+  padding: 5px;
+}
+
+.operation h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.location h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .bg-black {
-    background-color: black;
+  background-color: #222;
+  color: #c78c06;
+  padding: 20px;
+  line-height: 2;
+}
 }
 
-header span {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
+ /* desktop styles */
+ @media screen and (min-width: 760px) {
+ .container {
+  background-color: #222;
+  color: #c78c06;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  flex-direction: row;
 }
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 80px; /* Pushes the logo to the left */
+}
+
 
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    justify-content: space-around;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Aligns the list items horizontally */
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+nav ul li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Adjust spacing between list items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
+  color: #c78c06;
+  text-decoration: none;
+  padding: 10px;
 }
 
-/* ABOUT STYLES */
-
-main .wrapper {
-    padding: 1em;
+nav ul li a:hover {
+  background-color: #c78c06;
+  color: #222;
+  padding: 30px; /* Adjust padding on hover */
+  margin-bottom: 5px;
 }
 
-main h1 {
-    font-weight: 600;
-    font-size: 1.8rem;
+.search {
+  display: flex;
+  align-items: right;
+  margin-left: -5px; /* Adds spacing between list and search */
 }
 
-main p {
-    margin-top: 2em;
+.icon {
+  color: #c78c06;
+  background-color: #222;
+  width: 28px; /* Adjust icon width */
+  height: 28px; /* Adjust icon height */
+  border: 1px solid #c78c06; /* Set border size and color */
+  justify-content: center;
+  margin-right: 80px;
 }
 
-/* SERVICES */
-
-#services {
-    background-color: cornsilk;
+.main-banner {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden; /* Ensure the image fits within its container */
 }
 
-.services-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
+/* Style for the image within the main banner */
+.main-banner img {
+  margin-top: 0;
+  width: 100%; /* Desired width */
+  height: 420px; /* Desired height */
+  object-fit: cover; /* Crops the image to cover the specified dimensions */
 }
 
-.services-grid article {
-    background-color: white;
-    padding: 2em;
-    border: 1px solid gray;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
+/* Style for the black translucent overlay */
+.main-banner::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  right: 30px;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black translucent background */
 }
 
-article h3 {
-    margin: 0;
+/* Style for the text overlay */
+.text-overlay1 {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  text-align: left;
+  color: white;
+  padding: 10px;
+  max-width: 80%;
+  z-index: 1; 
+  margin-left: 30px;
 }
 
-article p {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    line-height: 24px;
+.text-overlay1 h1 {
+  font-size: 3.5rem; 
+  margin-bottom: 20px;
 }
 
-.btn {
-    text-decoration: none;
-    padding: 0.6em;
-    background-color: black;
-    color: white;
-    font-weight: 700;
-    border-radius: 5px;
+.text-overlay1 p {
+  font-size: small; /* Adjust the font size of p */
+  margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 760px) {
-    
-    main h1 {
-        font-size: 2.5rem;
-    }
-    
-    header div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    header div span {
-        width: 60%;
-        text-align: left;
-    }
-    header div nav {
-        flex-grow: 1;
-    }
-
-    .intro-grid {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        align-items: end;
-        padding-bottom: 0;
-    }
-
-    .services-grid {
-        flex-direction: row;
-        padding-bottom: 7em;
+.text-overlay1 .btn1 {
+  display: inline-block;
+  padding: 20px 20px; /* Adjust the padding of the button */
+  font-size: 1.1rem; /* Adjust the font size of the button */
+  background-color: #c78c06;
+  color: #222;
+  text-decoration: none;
+  text-align: center;
 }
-    .services-grid article {
-        flex-basis: 30%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: start;
-    }
 
-    .btn {
-        align-self: flex-end;
-    }
-
-    #work {
-        padding-top: 5em;
-    }
-
-    #work h2 {
-        text-align: center;
-        font-size: 3rem;
-    }
-
-    #work p {
-        width: 80%;
-        margin: auto;
-        margin-bottom: 2em;
-    }
- .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr;
- }
-
- .photo-grid img:nth-child(1) {
-    grid-column: 1/4;
-    grid-row: 1/2;
- }
- .photo-grid img:nth-child(2) {
-    grid-column: 4/7;
-    grid-row: 1/2;
- }
- .photo-grid img:nth-child(3) {
-    grid-column: 1/3;
-    grid-row: 2/3;
- }
- .photo-grid img:nth-child(4) {
-    grid-column: 3/5;
-    grid-row: 2/3;
- }
- .photo-grid img:nth-child(5) {
-    grid-column: 5/7;
-    grid-row: 2/3;
- }
+.about-us {
+  display: flex;
+  background-color: #ffe6ac;
+  margin-top: -5px;
 }
+
+.about-us img {
+  width: 50%;
+  height: 60%;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 1; /* Allows content to take remaining space */
+  display: inline-block;
+}
+.about-us h2 {
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.digital {
+  background-color: white;
+  padding: 10px;
+}
+
+.digital img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.digital h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+.digital h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.digital p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.digital1 {
+  background-color: #ffe6ac;
+  padding: 5px;
+}
+
+.btn2 {
+  display: inline-block;
+  width: 75%;
+  padding: 30px 30px; /* Adjust the padding of the button */
+  font-size: 20px; /* Adjust the font size of the button */
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.market {
+  background-color: white;
+  padding: 10px;
+}
+
+.market img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2px;
+}
+
+.market h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.market h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.market p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.market1 {
+  background-color: #ffe6ac;
+  padding: 5px;
+}
+
+.video {
+  background-color: white;
+  padding: 10px;
+}
+
+.video img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2px;
+}
+
+.video h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.video h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.video p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.video1 {
+  background-color: #ffe6ac;
+  padding: 5px;
+}
+
+.web {
+  background-color: white;
+  padding: 10px;
+}
+
+.web img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2px;
+}
+
+.web h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.web h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.web p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.web1 {
+  background-color: #ffe6ac;
+  padding: 5px;
+}
+
+.print {
+  background-color: white;
+  padding: 10px;
+}
+
+.print img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2px;
+}
+
+.print h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.print h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.print p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.print1 {
+  background-color: #ffe6ac;
+  padding: 5px;
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digital,
+.market {
+    flex: 0 0 calc(50% - 20px); /* Set width for two items per row */
+    margin-right: 0; /* Adjust margin between items */
+    margin-bottom: 20px; /* Adjust margin between rows */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+.digital {
+  margin-left: 20px;
+}
+.market {
+  margin-top: 90px;
+}
+
+.video,
+.web,
+.print {
+    flex: 0 0 calc(33.333% - 20px); /* Set width for three items per row */
+    margin-bottom: 20px; /* Adjust margin between rows */
+    margin-right: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+.video {
+  margin-left: 20px;
+}
+
+.vision {
+  width: 100%; /* Desired width of the cropped image */
+  height: 300px; /* Desired height of the cropped image */
+  position: relative; /* Establish positioning context */
+}
+
+.vision img {
+margin-top: 10px;
+width: 100%; /* Desired width */
+height: 235px; /* Desired height */
+object-fit: cover; /* Crops the image to cover the specified dimensions */
+}
+
+/* Style for the text overlay */
+.text-overlay2 {
+  position: absolute;
+  top: -30px;
+  bottom: 20px;
+  text-align: left;
+  color: white;
+  padding: 10px;
+  max-width: 100%;
+  z-index: 1; 
+  margin-left: 50px;
+}
+
+.text-overlay2 h3 {
+  font-size: 28px; 
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.text-overlay2 p {
+  font-size: 14px; /* Adjust the font size of p */
+  margin-bottom: 15px;
+}
+
+.text-overlay2 .btn3 {
+  display: inline-block;
+  padding: 25px 25px; /* Adjust the padding of the button */
+  font-size: 20px; /* Adjust the font size of the button */
+  background-color:  rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid #c78c06;
+  text-decoration: none;
+  text-align: center;
+}
+
+.horizontal-line {
+  border-top: 3px solid #c78c06; /* Adjust the width and color as needed */
+  margin: 10px 0; /* Optional margin for spacing */
+}
+
+.john {
+background-color: white;
+padding: 10px;
+margin-top: -65px;
+}
+
+.john img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.john h2 {
+font-size: 38px;
+margin-bottom: 10px;
+}
+.john h3 {
+font-size: 28px;
+margin-bottom: 0;
+margin-top: 15px;
+}
+.john h4 {
+font-size: 18px;
+margin-top: 5px;
+margin-bottom: -8px;
+}
+
+.john p {
+font-size: 14px;
+line-height: 1.5;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+.john1 {
+background-color: #ffe6ac;
+padding: 5px;
+}
+
+.bob {
+background-color: white;
+padding: 10px;
+}
+
+.bob img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.bob h3 {
+font-size: 28px;
+margin-bottom: 0;
+margin-top: 15px;
+
+}
+
+.bob h4 {
+font-size: 18px;
+margin-top: 5px;
+margin-bottom: -8px;
+}
+
+.bob p {
+font-size: 14px;
+line-height: 1.5;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+.bob1 {
+background-color: #ffe6ac;
+padding: 5px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.john,
+.john1 {
+  flex: 0 0 calc(50% - 1px); /* Set width for two items per row */
+  margin-bottom: 0; /* Adjust margin between rows */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.bob2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bob,
+.bob1 {
+  flex: 0 0 calc(50% - 1px); /* Set width for two items per row */
+  margin-bottom: 0; /* Adjust margin between rows */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.table h2 {
+  font-size: 38px;
+}
+
+.table input[type="text"],
+.table textarea {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    padding: 8px; /* Adjust padding as needed */
+    margin: 6px 0; /* Adjust margin as needed */
+}
+
+.table input[type="text1"],
+.table textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+    padding: 8px; /* Adjust padding as needed */
+    margin: 6px 0; /* Adjust margin as needed */
+}
+
+.table p {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.table button {
+  background-color: #222;
+  color: #c78c06;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.location h3 {
+  font-size: 28px;
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #ffe6ac;
+}
+
+td, th {
+  height: 40px;
+  padding: 5px;
+}
+
+.operation h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.send {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 3fr 3fr 3fr;
+  gap: 20px;
+}
+
+.table {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.location {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.operation {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+
+
+
+
+.bg-black {
+  background-color: #222;
+  color: #c78c06;
+  padding: 20px;
+  line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
