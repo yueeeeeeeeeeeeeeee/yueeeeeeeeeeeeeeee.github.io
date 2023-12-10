@@ -8,7 +8,7 @@ body {
 
 header {
       background-color: #222;
-      padding: 5px; /* Adjust padding as needed */
+      padding: 5px; 
     }
   
 .wrapper {
@@ -21,7 +21,7 @@ header {
       position: absolute;
       top: 40px;
       left: 20px;
-      margin-bottom: 20px; /* Adjust margin as needed */
+      margin-bottom: 20px; 
     }
   
 nav {
@@ -36,7 +36,7 @@ nav ul {
 nav ul li {
       width: 100%;
       text-align: center;
-      margin-bottom: 10px; /* Adjust margin as needed */
+      margin-bottom: 10px; 
     }
   
 nav ul li a {
@@ -55,14 +55,14 @@ nav ul li a:hover {
     }
   
 .search {
-        display: flex; /* Use flexbox for the search and icon */
+        display: flex; 
         align-items: center; /* Align items vertically */
-        margin-top: 20px; /* Adjust margin as needed */
+        margin-top: 20px; 
       }
     
 .search input[type="text"] {
         flex: 1; /* Allow input to grow and take available space */
-        width: calc(100% - 40px); /* Adjust width as needed */
+        width: calc(100% - 40px); 
         background-color: white;
         border: 2px solid ;
         padding: 8px;
@@ -73,26 +73,24 @@ nav ul li a:hover {
 .icon {
         color: #c78c06;
         background-color: #222;
-        width: 28px; /* Adjust icon width */
-        height: 28px; /* Adjust icon height */
+        width: 28px; 
+        height: 28px; 
         border: 1px solid #c78c06; /* Set border size and color */
         justify-content: center;
       }
 
-    /* Styles for the main banner */
 .main-banner {
     position: relative;
     max-width: 100%;
     overflow: hidden; /* Ensure the image fits within its container */
   }
-  
-  /* Style for the image within the main banner */
-  .main-banner img {
-    width: 100%; /* Make the image responsive */
+
+.main-banner img {
+    width: 100%; 
     height: auto;
     display: block;
   }
-/* Style for the black translucent overlay */
+
 .main-banner::before {
     content: '';
     position: absolute;
@@ -102,8 +100,7 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Black translucent background */
   }
   
-  /* Style for the text overlay */
-  .text-overlay1 {
+.text-overlay1 {
     position: absolute;
     top: 20px;
     bottom: 40px;
@@ -114,20 +111,20 @@ nav ul li a:hover {
     z-index: 1; 
   }
 
-  .text-overlay1 h1 {
+.text-overlay1 h1 {
     font-size: 3.5rem; 
     margin-bottom: 20px;
   }
   
-  .text-overlay1 p {
-    font-size: small; /* Adjust the font size of p */
+.text-overlay1 p {
+    font-size: small; 
     margin-bottom: 15px;
   }
   
-  .text-overlay1 .btn1 {
+.text-overlay1 .btn1 {
     display: inline-block;
-    padding: 20px 20px; /* Adjust the padding of the button */
-    font-size: 1.1rem; /* Adjust the font size of the button */
+    padding: 20px 20px; 
+    font-size: 1.1rem; 
     background-color: #c78c06;
     color: #222;
     text-decoration: none;
@@ -135,62 +132,63 @@ nav ul li a:hover {
   }
 
 
-  .about-us {
+.about-us {
     background-color: #ffe6ac; 
     padding: 20px; /* Add padding to create space around the content */
   }
 
-  .about-us img {
-    width: 100%; /* Make the image responsive */
+.about-us img {
+    width: 100%; 
     height: auto;
     display: block;
   }
-  .about-us h2 {
-    font-size: 38px; /* Adjust the font size of h2 */
+.about-us h2 {
+    font-size: 38px; 
   }
   
-  .about-us p {
-    font-size: 14px; /* Adjust the font size of p */
+.about-us p {
+    font-size: 14px; 
     line-height: 1.5; 
     font-weight: 500;
   }
 
-  .digital {
+.digital {
     background-color: white;
     padding: 10px;
   }
 
-  .digital img {
+.digital img {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  .digital h2 {
+.digital h2 {
     font-size: 38px;
     margin-bottom: 20px;
   }
-  .digital h3 {
+
+.digital h3 {
     font-size: 28px;
     margin-bottom: 10px;
     margin-top: 15px;
   }
 
-  .digital p {
+.digital p {
     font-size: 14px;
     line-height: 1.5;
     font-weight: 500;
   }
 
-  .digital1 {
+.digital1 {
     background-color: #ffe6ac;
     padding: 5px;
   }
 
-  .btn2 {
+.btn2 {
     display: inline-block;
-    padding: 30px 30px; /* Adjust the padding of the button */
-    font-size: 20px; /* Adjust the font size of the button */
+    padding: 30px 30px; 
+    font-size: 20px; 
     background-color: #222;
     color: white;
     text-decoration: none;
@@ -199,157 +197,157 @@ nav ul li a:hover {
     margin-left: 5px;
   }
 
-  .market {
+.market {
     background-color: white;
     padding: 10px;
   }
 
-  .market img {
+.market img {
     width: 100%;
     height: auto;
     display: block;
     margin-top: 2px;
   }
 
-  .market h2 {
+.market h2 {
     font-size: 38px;
     margin-bottom: 10px;
   }
 
-  .market h3 {
+.market h3 {
     font-size: 28px;
     margin-bottom: 10px;
     margin-top: 15px;
   }
 
-  .market p {
+.market p {
     font-size: 14px;
     line-height: 1.5;
     font-weight: 500;
   }
 
-  .market1 {
+.market1 {
     background-color: #ffe6ac;
     padding: 5px;
   }
 
-  .video {
+.video {
     background-color: white;
     padding: 10px;
   }
 
-  .video img {
+.video img {
     width: 100%;
     height: auto;
     display: block;
     margin-top: 2px;
   }
 
-  .video h2 {
-    font-size: 38px;
-    margin-bottom: 10px;
-  }
-  
-  .video h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-  }
-
-  .video p {
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 500;
-  }
-
-  .video1 {
-    background-color: #ffe6ac;
-    padding: 5px;
-  }
-
-  .web {
-    background-color: white;
-    padding: 10px;
-  }
-
-  .web img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 2px;
-  }
-
-  .web h2 {
+.video h2 {
     font-size: 38px;
     margin-bottom: 10px;
   }
   
-  .web h3 {
+.video h3 {
     font-size: 28px;
     margin-bottom: 10px;
     margin-top: 15px;
   }
 
-  .web p {
+.video p {
     font-size: 14px;
     line-height: 1.5;
     font-weight: 500;
   }
 
-  .web1 {
+.video1 {
     background-color: #ffe6ac;
     padding: 5px;
   }
 
-  .print {
+.web {
     background-color: white;
     padding: 10px;
   }
 
-  .print img {
+.web img {
     width: 100%;
     height: auto;
     display: block;
     margin-top: 2px;
   }
 
-  .print h2 {
+.web h2 {
     font-size: 38px;
     margin-bottom: 10px;
   }
   
-  .print h3 {
+.web h3 {
     font-size: 28px;
     margin-bottom: 10px;
     margin-top: 15px;
   }
 
-  .print p {
+.web p {
     font-size: 14px;
     line-height: 1.5;
     font-weight: 500;
   }
 
-  .print1 {
+.web1 {
     background-color: #ffe6ac;
     padding: 5px;
   }
 
-  .vision {
-    width: 100%; /* Desired width of the cropped image */
-    height: 300px; /* Desired height of the cropped image */
+.print {
+    background-color: white;
+    padding: 10px;
+  }
+
+.print img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 2px;
+  }
+
+.print h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  
+.print h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+.print p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+.print1 {
+    background-color: #ffe6ac;
+    padding: 5px;
+  }
+
+.vision {
+    width: 100%; 
+    height: 300px; 
     position: relative; /* Establish positioning context */
 }
 
 .vision img {
   margin-top: 10px;
-  width: 100%; /* Desired width */
-  height: 235px; /* Desired height */
-  object-fit: cover; /* Crops the image to cover the specified dimensions */
+  width: 100%; 
+  height: 235px; 
+  object-fit: cover; 
 }
 
-  /* Style for the text overlay */
-  .text-overlay2 {
+
+.text-overlay2 {
     position: absolute;
     top: -30px;
     bottom: 20px;
@@ -360,21 +358,21 @@ nav ul li a:hover {
     z-index: 1; 
   }
 
-  .text-overlay2 h3 {
+.text-overlay2 h3 {
     font-size: 28px; 
     margin-top: 50px;
     margin-bottom: 10px;
   }
   
-  .text-overlay2 p {
-    font-size: 14px; /* Adjust the font size of p */
+.text-overlay2 p {
+    font-size: 14px; 
     margin-bottom: 15px;
   }
   
-  .text-overlay2 .btn3 {
+.text-overlay2 .btn3 {
     display: inline-block;
-    padding: 25px 25px; /* Adjust the padding of the button */
-    font-size: 20px; /* Adjust the font size of the button */
+    padding: 25px 25px; 
+    font-size: 20px; 
     background-color:  rgba(0, 0, 0, 0.5);
     color: white;
     border: 2px solid #c78c06;
@@ -382,9 +380,9 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  .horizontal-line {
-    border-top: 3px solid #c78c06; /* Adjust the width and color as needed */
-    margin: 10px 0; /* Optional margin for spacing */
+.horizontal-line {
+    border-top: 3px solid #c78c06; 
+    margin: 10px 0; 
 }
 
 .john {
@@ -403,11 +401,13 @@ nav ul li a:hover {
   font-size: 38px;
   margin-bottom: 10px;
 }
+
 .john h3 {
   font-size: 28px;
   margin-bottom: 0;
   margin-top: 15px;
 }
+
 .john h4 {
   font-size: 18px;
   margin-top: 5px;
@@ -473,22 +473,31 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-.table input[type="text"],
+.name input[type="text"],
 .table textarea {
     width: 100%;
     height: 30px;
-    box-sizing: border-box; /* Includes padding and border in the width calculation */
-    padding: 8px; /* Adjust padding as needed */
-    margin: 6px 0; /* Adjust margin as needed */
+    box-sizing: border-box; 
+    padding: 8px; 
+    margin: 6px 0; 
 }
 
-.table input[type="text1"],
+.email input[type="text"],
+.table textarea {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box; 
+    padding: 8px; 
+    margin: 6px 0; 
+}
+
+.message input[type="text"],
 .table textarea {
     width: 100%;
     height: 150px;
-    box-sizing: border-box; /* Includes padding and border in the width calculation */
-    padding: 8px; /* Adjust padding as needed */
-    margin: 6px 0; /* Adjust margin as needed */
+    box-sizing: border-box; 
+    padding: 8px; 
+    margin: 6px 0; 
 }
 
 .table p {
@@ -541,7 +550,13 @@ td, th {
 
  /* desktop styles */
  @media screen and (min-width: 760px) {
- .container {
+.body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
   background-color: #222;
   color: #c78c06;
   display: flex;
@@ -550,15 +565,15 @@ td, th {
   height: 150px;
   flex-direction: row;
 }
+
 .wrapper {
   display: flex;
   align-items: center;
 }
 
 .logo {
-  margin-left: 80px; /* Pushes the logo to the left */
+  margin-left: 80px; 
 }
-
 
 nav ul {
   display: flex;
@@ -571,8 +586,8 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block; /* Display list items horizontally */
-  margin-right: 20px; /* Adjust spacing between list items */
+  display: inline-block; 
+  margin-right: 20px; 
 }
 
 nav ul li a {
@@ -584,22 +599,21 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #c78c06;
   color: #222;
-  padding: 30px; /* Adjust padding on hover */
+  padding: 30px; 
   margin-bottom: 5px;
 }
 
 .search {
   display: flex;
-  align-items: right;
-  margin-left: -5px; /* Adds spacing between list and search */
+  margin-left: -5px; 
 }
 
 .icon {
   color: #c78c06;
   background-color: #222;
-  width: 28px; /* Adjust icon width */
-  height: 28px; /* Adjust icon height */
-  border: 1px solid #c78c06; /* Set border size and color */
+  width: 28px; 
+  height: 28px; 
+  border: 1px solid #c78c06; 
   justify-content: center;
   margin-right: 80px;
 }
@@ -607,18 +621,16 @@ nav ul li a:hover {
 .main-banner {
   position: relative;
   max-width: 100%;
-  overflow: hidden; /* Ensure the image fits within its container */
+  overflow: hidden; 
 }
 
-/* Style for the image within the main banner */
 .main-banner img {
   margin-top: 0;
-  width: 100%; /* Desired width */
-  height: 420px; /* Desired height */
-  object-fit: cover; /* Crops the image to cover the specified dimensions */
+  width: 100%; 
+  height: 420px; 
+  object-fit: cover; 
 }
 
-/* Style for the black translucent overlay */
 .main-banner::before {
   content: '';
   position: absolute;
@@ -629,7 +641,6 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.5); /* Black translucent background */
 }
 
-/* Style for the text overlay */
 .text-overlay1 {
   position: absolute;
   top: 20px;
@@ -648,14 +659,14 @@ nav ul li a:hover {
 }
 
 .text-overlay1 p {
-  font-size: small; /* Adjust the font size of p */
+  font-size: small; 
   margin-bottom: 15px;
 }
 
 .text-overlay1 .btn1 {
   display: inline-block;
-  padding: 20px 20px; /* Adjust the padding of the button */
-  font-size: 1.1rem; /* Adjust the font size of the button */
+  padding: 20px 20px; 
+  font-size: 1.1rem; 
   background-color: #c78c06;
   color: #222;
   text-decoration: none;
@@ -681,6 +692,7 @@ nav ul li a:hover {
   flex: 1; /* Allows content to take remaining space */
   display: inline-block;
 }
+
 .about-us h2 {
   font-size: 38px;
   margin-top: 20px;
@@ -702,6 +714,7 @@ nav ul li a:hover {
   font-size: 38px;
   margin-bottom: 10px;
 }
+
 .digital h3 {
   font-size: 28px;
   margin-bottom: 10px;
@@ -722,8 +735,8 @@ nav ul li a:hover {
 .btn2 {
   display: inline-block;
   width: 75%;
-  padding: 30px 30px; /* Adjust the padding of the button */
-  font-size: 20px; /* Adjust the font size of the button */
+  padding: 30px 30px; 
+  font-size: 20px; 
   background-color: #222;
   color: white;
   text-decoration: none;
@@ -876,13 +889,15 @@ nav ul li a:hover {
 .digital,
 .market {
     flex: 0 0 calc(50% - 20px); /* Set width for two items per row */
-    margin-right: 0; /* Adjust margin between items */
-    margin-bottom: 20px; /* Adjust margin between rows */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-right: 0; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
 }
+
 .digital {
   margin-left: 20px;
 }
+
 .market {
   margin-top: 90px;
 }
@@ -890,29 +905,29 @@ nav ul li a:hover {
 .video,
 .web,
 .print {
-    flex: 0 0 calc(33.333% - 20px); /* Set width for three items per row */
-    margin-bottom: 20px; /* Adjust margin between rows */
+    flex: 0 0 calc(33.333% - 20px); 
+    margin-bottom: 20px; 
     margin-right: 10px;
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    box-sizing: border-box; 
 }
+
 .video {
   margin-left: 20px;
 }
 
 .vision {
-  width: 100%; /* Desired width of the cropped image */
-  height: 300px; /* Desired height of the cropped image */
-  position: relative; /* Establish positioning context */
+  width: 100%; 
+  height: 300px; 
+  position: relative; 
 }
 
 .vision img {
 margin-top: 10px;
-width: 100%; /* Desired width */
-height: 235px; /* Desired height */
-object-fit: cover; /* Crops the image to cover the specified dimensions */
+width: 100%; 
+height: 235px; 
+object-fit: cover; 
 }
 
-/* Style for the text overlay */
 .text-overlay2 {
   position: absolute;
   top: -30px;
@@ -932,14 +947,14 @@ object-fit: cover; /* Crops the image to cover the specified dimensions */
 }
 
 .text-overlay2 p {
-  font-size: 14px; /* Adjust the font size of p */
+  font-size: 14px; 
   margin-bottom: 15px;
 }
 
 .text-overlay2 .btn3 {
   display: inline-block;
-  padding: 25px 25px; /* Adjust the padding of the button */
-  font-size: 20px; /* Adjust the font size of the button */
+  padding: 25px 25px; 
+  font-size: 20px; 
   background-color:  rgba(0, 0, 0, 0.5);
   color: white;
   border: 2px solid #c78c06;
@@ -948,7 +963,7 @@ object-fit: cover; /* Crops the image to cover the specified dimensions */
 }
 
 .horizontal-line {
-  border-top: 3px solid #c78c06; /* Adjust the width and color as needed */
+  border-top: 3px solid #c78c06; 
   margin: 10px 0; /* Optional margin for spacing */
 }
 
@@ -968,11 +983,13 @@ display: block;
 font-size: 38px;
 margin-bottom: 10px;
 }
+
 .john h3 {
 font-size: 28px;
 margin-bottom: 0;
 margin-top: 15px;
 }
+
 .john h4 {
 font-size: 18px;
 margin-top: 5px;
@@ -989,6 +1006,7 @@ margin-bottom: 20px;
 .john1 {
 background-color: #ffe6ac;
 padding: 5px;
+margin-top: 30px;
 }
 
 .bob {
@@ -1006,7 +1024,6 @@ display: block;
 font-size: 28px;
 margin-bottom: 0;
 margin-top: 15px;
-
 }
 
 .bob h4 {
@@ -1034,9 +1051,9 @@ padding: 5px;
 
 .john,
 .john1 {
-  flex: 0 0 calc(50% - 1px); /* Set width for two items per row */
-  margin-bottom: 0; /* Adjust margin between rows */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
+  flex: 0 0 calc(50% - 1px); 
+  margin-bottom: 0; 
+  box-sizing: border-box; 
 }
 
 .bob2 {
@@ -1046,31 +1063,40 @@ padding: 5px;
 
 .bob,
 .bob1 {
-  flex: 0 0 calc(50% - 1px); /* Set width for two items per row */
-  margin-bottom: 0; /* Adjust margin between rows */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
+  flex: 0 0 calc(50% - 1px); 
+  margin-bottom: 0; 
+  box-sizing: border-box; 
 }
 
 .table h2 {
   font-size: 38px;
 }
 
-.table input[type="text"],
+.name input[type="text"],
 .table textarea {
     width: 100%;
     height: 30px;
-    box-sizing: border-box; /* Includes padding and border in the width calculation */
-    padding: 8px; /* Adjust padding as needed */
-    margin: 6px 0; /* Adjust margin as needed */
+    box-sizing: border-box; 
+    padding: 8px; 
+    margin: 6px 0; 
 }
 
-.table input[type="text1"],
+.email input[type="text"],
+.table textarea {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box; 
+    padding: 8px; 
+    margin: 6px 0; 
+}
+
+.message input[type="text"],
 .table textarea {
     width: 100%;
     height: 150px;
-    box-sizing: border-box; /* Includes padding and border in the width calculation */
-    padding: 8px; /* Adjust padding as needed */
-    margin: 6px 0; /* Adjust margin as needed */
+    box-sizing: border-box; 
+    padding: 8px; 
+    margin: 6px 0; 
 }
 
 .table p {
@@ -1125,16 +1151,14 @@ td, th {
 }
 
 .location {
-  grid-column: 1 / 3;
-  grid-row: 3 / 4;
-}
-
-.operation {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
 }
 
-
+.operation {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
 
 .bg-black {
   background-color: #222;
@@ -1143,24 +1167,4 @@ td, th {
   line-height: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
